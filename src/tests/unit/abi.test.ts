@@ -3,7 +3,7 @@
 
 import { HexString } from "../../utils";
 import { Deserializer, Serializer } from "../../bcs";
-import { ScriptABI, EntryFunctionABI, TransactionScriptABI, ArgumentABI } from "../../aptos_types/abi";
+import { ScriptABI, EntryFunctionABI, TransactionScriptABI, ArgumentABI } from "../../aptos_types";
 import { TypeTagAddress, TypeTagU64 } from "../../aptos_types";
 import { ModuleId } from "../../aptos_types";
 

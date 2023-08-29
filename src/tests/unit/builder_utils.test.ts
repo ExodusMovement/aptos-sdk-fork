@@ -34,7 +34,7 @@ import {
   ensureNumber,
   ensureBigInt,
 } from "../../transaction_builder/builder_utils";
-import { stringStructTag } from "../../aptos_types/type_tag";
+import { stringStructTag } from "../../aptos_types";
 
 describe("BuilderUtils", () => {
   it("parses a bool TypeTag", async () => {

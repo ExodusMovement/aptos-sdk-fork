@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import { AccountAddress } from "../../aptos_types";
-import { Deserializer } from "../../bcs/deserializer";
+import { Deserializer } from "../../bcs";
 import {
   bcsSerializeBool,
   bcsSerializeBytes,
@@ -17,8 +17,8 @@ import {
   deserializeVector,
   serializeVector,
   serializeVectorWithFunc,
-} from "../../bcs/helper";
-import { Serializer } from "../../bcs/serializer";
+} from "../../bcs";
+import { Serializer } from "../../bcs";
 
 test("serializes and deserializes a vector of serializables", () => {
   const address0 = AccountAddress.fromHex("0x1");

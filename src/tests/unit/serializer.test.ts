@@ -1,7 +1,7 @@
 // Copyright © Aptos Foundation
 // SPDX-License-Identifier: Apache-2.0
 
-import { Serializer } from "../../bcs/serializer";
+import { Serializer } from "../../bcs";
 
 describe("BCS Serializer", () => {
   let serializer: Serializer;

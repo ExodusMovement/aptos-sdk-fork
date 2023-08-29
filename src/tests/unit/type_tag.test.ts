@@ -15,7 +15,7 @@ import {
   TypeTagU64,
   TypeTagU8,
   TypeTagVector,
-} from "../../aptos_types/type_tag";
+} from "../../aptos_types";
 import { Deserializer, Serializer } from "../../bcs";
 
 const expectedTypeTag = {

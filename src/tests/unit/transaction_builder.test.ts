@@ -7,7 +7,7 @@ import { bytesToHex, hexToBytes } from "@noble/hashes/utils";
 import { bcsSerializeBool, bcsSerializeUint64, bcsToBytes, Bytes } from "../../bcs";
 import { HexString } from "../../utils";
 
-import { TransactionBuilderEd25519, TransactionBuilder } from "../../transaction_builder/index";
+import { TransactionBuilderEd25519, TransactionBuilder } from "../../transaction_builder";
 import {
   ChainId,
   Ed25519Signature,
