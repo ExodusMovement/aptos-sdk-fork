@@ -1,5 +1,5 @@
 {
-  "name": "aptos",
+  "name": "@exodus/aptos-sdk-fork",
   "description": "Aptos SDK",
   "packageManager": "pnpm@8.3.1",
   "license": "Apache-2.0",
@@ -27,20 +27,6 @@
     "fmt:check": "pnpm _fmt --check",
     "cov:clean": "rm -rf coverage"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/aptos-labs/aptos-core.git"
-  },
-  "homepage": "https://github.com/aptos-labs/aptos-core",
-  "bugs": {
-    "url": "https://github.com/aptos-labs/aptos-core/issues"
-  },
-  "author": "aptoslabs.com",
-  "keywords": [
-    "Aptos",
-    "Aptos Labs",
-    "Move"
-  ],
   "dependencies": {
     "@noble/hashes": "1.1.3",
     "tweetnacl": "1.0.3"
