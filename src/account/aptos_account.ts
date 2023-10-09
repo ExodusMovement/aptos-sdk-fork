@@ -36,6 +36,13 @@ export class AptosAccount {
     return new AptosAccount(HexString.ensure(obj.privateKeyHex).toUint8Array(), obj.address);
   }
 
+  static addressFromPublicKey(publicKey: any) {
+    const uint8Array = HexString.ensure(publicKey).toUint8Array()
+    const pubKey = new Ed25519PublicKey(uint8Array);
+    const authKey = AuthenticationKey.fromEd25519PublicKey(pubKey);
+    return authKey.derivedAddress().hex();
+  }
+
   /**
    * Check's if the derive path is valid
    */

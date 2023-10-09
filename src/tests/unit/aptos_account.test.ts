@@ -14,6 +14,11 @@ const aptosAccountObject: AptosAccountObject = {
 
 const mnemonic = "shoot island position soft burden budget tooth cruel issue economy destroy above";
 
+test("addressFromPublicKey", () => {
+  const address = AptosAccount.addressFromPublicKey(aptosAccountObject.publicKeyHex);
+  expect(address).toBe(aptosAccountObject.address);
+});
+
 test("generates random accounts", () => {
   const a1 = new AptosAccount();
   const a2 = new AptosAccount();
