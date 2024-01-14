@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import nacl from "tweetnacl";
-import * as bip39 from "@scure/bip39";
+import * as bip39 from "bip39";
 import { bytesToHex } from "@noble/hashes/utils";
 import { sha256 } from "@noble/hashes/sha256";
 import { sha3_256 as sha3Hash } from "@noble/hashes/sha3";
