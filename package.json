@@ -17,15 +17,7 @@
     }
   },
   "files": [
-    "src/*",
-    "dist/*",
-    ".eslintignore",
-    ".eslintrc.js",
-    ".nvmrc",
-    ".prettierignore",
-    ".versionrc.json",
-    "jest.config.js",
-    "!src/tests"
+    "dist/*"
   ],
   "scripts": {
     "build": "pnpm build:clean && pnpm _build:node && pnpm _build:browser",
