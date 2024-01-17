@@ -2,6 +2,8 @@
  * Credits to https://github.com/darrylhodgins/typescript-memoize
  */
 
+import assert from "assert";
+
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-restricted-syntax */
 
@@ -107,7 +109,7 @@ function getNewFunction(
 
       // If true is passed as first parameter, will automatically use every argument, passed to string
       if (hashFunction === true) {
-        hashKey = args.map((a) => a.toString()).join("!");
+        assert(args.length === 0, "Memoize is not allowed to receive arguments")
       } else if (hashFunction) {
         hashKey = hashFunction.apply(that, args);
       } else {
