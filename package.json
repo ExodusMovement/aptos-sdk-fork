@@ -10,7 +10,6 @@
   "types": "./dist/index.d.ts",
   "files": [
     "dist/index.d.ts",
-    "dist/index.mjs",
     "dist/index.js"
   ],
   "scripts": {
